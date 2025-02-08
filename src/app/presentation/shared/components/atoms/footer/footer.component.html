@@ -1,1 +1,21 @@
-<p>footer works!</p>
+  <div class="container-footer">
+    <div class="social-media">
+      <p>Social Links</p>
+      <div>
+        <app-button
+          *ngFor="let btn of socialButtons"
+          [icon]="btn.icon"
+          [text]="btn.text"
+          class="social-btn">
+        </app-button>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Terms and Conditions</p>
+      <p class="text-copyright">© 2025 Emprendamos All rights reserved.</p>
+    </div>
+    <div class="info">
+      <p>FAQ</p>
+      <p>About Us</p>
+    </div>
+  </div>

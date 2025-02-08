@@ -1,1 +1,30 @@
-<p>auth-carousel works!</p>
+
+<!-- Botón transversal como control del carrusel -->
+<div [id]="carouselId" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <p class="text">{{ text }}</p>
+        <img [src]="imgSrc" [alt]="imgAlt">
+      </div>
+    </div>
+  </div>
+
+
+  <app-button
+    class="carousel-control-prev"
+    type="button"
+    [attr.data-bs-target]="'#' + carouselId"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </app-button>
+
+
+  <app-button
+    class="carousel-control-next"
+    type="button"
+    [attr.data-bs-target]="'#' + carouselId"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </app-button>
+</div>

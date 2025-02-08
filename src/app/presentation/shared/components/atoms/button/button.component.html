@@ -1,9 +1,11 @@
 <button
-  (click)="onClick()"
+[attr.data-bs-target]="dataBsTarget"
+[attr.data-bs-slide]="dataBsSlide"
   [type]="type"
   [class]="class"
   [disabled]="disabled"
   (click)="onClick()"
 >
+<i *ngIf="icon" [class]="icon"></i>
   {{ text }}
 </button>

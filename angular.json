@@ -36,6 +36,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/shared/assets",
+                "output": "assets"
               }
             ],
             "styles": [

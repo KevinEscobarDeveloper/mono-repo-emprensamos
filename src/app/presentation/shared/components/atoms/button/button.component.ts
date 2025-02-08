@@ -12,14 +12,17 @@ export class ButttonComponent {
   @Input() text: string = '';
   @Input() type: string = 'button';
   @Input() class: string = '';
-  @Input() icon: any = '';
+  @Input() icon?: string = '';
   @Input() disabled: boolean = false;
-  @Output() click = new EventEmitter<void>();
-  clicked: any;
+  // Atributos para el carousel
+  @Input() dataBsTarget: string = '';  // Ejemplo: "#carouselExample"
+  @Input() dataBsSlide: string = '';   // Ejemplo: "prev" o "next"
 
-onClick() {
+  @Output() click = new EventEmitter<void>();
+
+  onClick() {
     if (!this.disabled) {
-      this.clicked.emit();
+      this.click.emit();
     }
-}
+  }
 }

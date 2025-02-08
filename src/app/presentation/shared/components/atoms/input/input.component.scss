@@ -3,7 +3,7 @@ $color-background: #2F2C4B ;
 $color-border: #696781 ;
 $color-icon: #B0AAE9;
 
-.login-input{
+.login-input, .sign-up-input{
   background-color: $color-background;
   border: 1px solid $color-border;
   color: $color-border;
