@@ -1,0 +1,22 @@
+$color-buttons: #7B35D0;
+
+.container{
+  background-color: #121022;
+  height: 100vh;
+  color: white;
+}
+header
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+h1{
+  color: $color-buttons;
+}
+.container-carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <header>
+    <h1>Emprendamos</h1>
+    <app-button class="connect-wallet-button" [text]="firstText" ></app-button>
+  </header>
+  <div class="container-carousel">
+  <app-auth-carousel
+  *ngFor="let carousel of carousels; let i = index"
+  [text]="carousel.text"
+  [imgSrc]="carousel.imgSrc"
+  [imgAlt]="carousel.imgAlt"
+  [carouselId]="'carousel' + i">
+</app-auth-carousel>
+</div>
+ <app-footer></app-footer>
+</div>

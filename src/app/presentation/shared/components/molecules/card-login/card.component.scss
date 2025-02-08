@@ -1,0 +1,29 @@
+.container-inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1F1D35;
+  border-radius: 25px 0 0 25px;
+  height: 100vh;
+  padding: 1rem;
+  gap: 3rem;
+}
+label, h1, p, a{
+  color: white;
+  text-decoration: none;
+}
+label, p, a{
+font-size: 12px;
+}
+.forgot-password{
+  float: right;
+  margin-top: 0.5rem;
+}
+i{
+  color: white;
+  font-size: 24px;
+}
+a:hover{
+  text-decoration: underline;
+}

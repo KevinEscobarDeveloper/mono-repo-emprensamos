@@ -1,0 +1,22 @@
+.container-footer{
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5% 1.5%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#121022 10%, #0D1E33 100%);
+
+}
+.social-media, .copyright, .info{
+  border-left: 1px solid #696781;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 12px;
+}
+
+.text-copyright{
+color: #8D8B8B;
+}

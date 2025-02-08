@@ -1,0 +1,16 @@
+<div class="input-container">
+  <input
+    [type]="type"
+    [id]="id"
+    [name]="name"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [required]="required"
+    [value]="value"
+    (input)="onInputChange($event)"
+    [ngClass]="inputClass"
+  >
+  <span *ngIf="customIcon" class="input-icon">
+    <i [class]="customIcon"></i>
+  </span>
+</div>

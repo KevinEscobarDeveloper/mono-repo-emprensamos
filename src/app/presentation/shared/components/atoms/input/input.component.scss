@@ -1,0 +1,28 @@
+//colores para inicio de sesión
+$color-background: #2F2C4B ;
+$color-border: #696781 ;
+$color-icon: #B0AAE9;
+
+.login-input, .sign-up-input{
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  color: $color-border;
+  border-radius: 25px;
+  padding: 0.5rem;
+  width: 25rem;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  pointer-events: none; // Para que el icono no bloquee el clic en el input
+}
